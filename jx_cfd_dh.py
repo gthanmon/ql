@@ -16,7 +16,7 @@ cfd_start_time = -0.15
 cfd_offset_time = 0.01
 
 # 基础配置勿动
-cfd_url = "https://m.jingxi.com/jxbfd/user/ExchangePrize?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1646915959362&ptag=7155.9.47&dwType=3&dwLvl=7&ddwPaperMoney=100000&strPoolName=jxcfd2_exchange_hb_202203&strPgtimestamp=1646915959249&strPhoneID=b34bec4538452558&strPgUUNum=6ed1c05d9988a51af15207e50663a28e&_stk=_cfd_t%2CbizCode%2CddwPaperMoney%2CdwEnv%2CdwLvl%2CdwType%2Cptag%2Csource%2CstrPgUUNum%2CstrPgtimestamp%2CstrPhoneID%2CstrPoolName%2CstrZone&_ste=1&h5st=20220310203919364%3B6822193071655685%3B92a36%3Btk02wc3a71cae18nm0QnEtqdJft3gt6ZsUll4dowXRa0o99e4fBKLdmeKNr8pADe3q213iydWsq%2FyCuAubw612w9mgMy%3Bafec4a97e3113260065c2c4101bb4e75cac46a20c5aab5f78a39b6f492ab5d2b%3B3.0%3B1646915959364&_=1646915959367&sceneval=2&g_login_type=1&callback=jsonpCBKKK&g_ty=ls"
+cfd_url = "https://m.jingxi.com/jxbfd/user/ExchangePrize?strZone=jxbfd&bizCode=jxbfd&source=jxbfd&dwEnv=7&_cfd_t=1653121596250&ptag=7155.9.47&dwType=3&dwLvl=1&ddwPaperMoney=100000&strPoolName=jxcfd2_exchange_hb_202205&strPgtimestamp=1653121596177&strPhoneID=d5577497dff2df64&strPgUUNum=c75921a6a6753e2213084561d585673c&_stk=_cfd_t%2CbizCode%2CddwPaperMoney%2CdwEnv%2CdwLvl%2CdwType%2Cptag%2Csource%2CstrPgUUNum%2CstrPgtimestamp%2CstrPhoneID%2CstrPoolName%2CstrZone&_ste=1&h5st=20220521162636252%3B9795731402020025%3B92a36%3Btk02w7fac1b9a18n67A9RMpfaf1qJ%2Ba2HoFk1dTrIA1bp1JPgvA5ckrw%2F9epCqhOMprnvFMQ2T2FmhLqwrO%2B5BKbK%2Fus%3B0765ba01aca285ed7033dae1ddbf64f47d4c3a7b2fd254d654725072179b4cf4%3B3.0%3B1653121596252&_=1653121596259&sceneval=2&g_login_type=1&callback=jsonpCBKQ&g_ty=ls&appCode=msd1188198"
 pattern_pin = re.compile(r'pt_pin=([\w\W]*?);')
 pattern_data = re.compile(r'\(([\w\W]*?)\)')
 
