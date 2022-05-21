@@ -42,7 +42,6 @@ let NoNeedCodes = [];
       subTitle = '';
       option = {};
       $.retry = 0;
-      await shareCodesFormat();
       lnrun++;
       await jdFruit();
       if (lnrun === 5) {
