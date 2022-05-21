@@ -1,7 +1,6 @@
 /*
 * 东东农场
 * export IS_WATER_GOOD_FOR_FARM="false" // true: 浇水  false: 存水不浇
-5 14 * * * jd_fruit.js
 */
 
 const $ = new Env('东东农场');
@@ -1464,7 +1463,7 @@ function shareCodesFormat() {
 
 function readShareCode() {
   return new Promise(async resolve => {
-    $.get({url: `https://api.jdsharecode.xyz/api/farm/50`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: ``, timeout: 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(JSON.stringify(err))
