@@ -1,5 +1,5 @@
 /**
- * const $ = new Env('集魔方兑换');
+ * const $ = new Env('小魔方');
  * cron: 10 8 * * *
  * Fix by HarbourJ
  * TG: https://t.me/HarbourToulu
