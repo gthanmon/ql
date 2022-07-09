@@ -16,11 +16,6 @@ let mf_logs: any, logApi: boolean = true // 若有log接口请改为true并修�
 
 !(async () => {
   dotenv.config()
-  if (existsSync('./utils/mf_log.ts')) {
-    mf_logs = require('./utils/mf_log').mf_logs
-  } else {
-    console.log('./utils/mf_log not found')
-  }
   let cookiesArr: any = await requireConfig()
   for (let i = 0; i < cookiesArr.length; i++) {
     cookie = cookiesArr[i]
