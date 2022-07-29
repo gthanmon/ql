@@ -23,7 +23,6 @@ let mf_logs: any, logApi: boolean = true // 若有log接口请改为true并修�
     index = i + 1
     console.log(`\n开始【京东账号${index}】${UserName}\n`)
     if (logApi === true) {
-      console.log("开启船长🛳偷撸模式")
     }
     res = await api("functionId=getInteractionHomeInfo&body=%7B%22sign%22%3A%22u6vtLQ7ztxgykLEr%22%7D&appid=content_ecology&client=wh5&clientVersion=1.0.0")
     let sign: string = res.result.taskConfig.projectId, reward: string = res.result.taskConfig.projectPoolId, rewardSign: string = res.result.giftConfig.projectId
