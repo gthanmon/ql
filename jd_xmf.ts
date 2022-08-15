@@ -1,10 +1,6 @@
 /**
  * const $ = new Env('小魔方');
  * cron: 10 8 * * *
- * Fix by HarbourJ
- * TG: https://t.me/HarbourToulu
- * 默认魔方满3/6自动兑换
- * 已内置log，不定时更新，若火爆请在HarbourTouluChat反馈以便及时更新log。
  */
 
 import {requireConfig, wait, post, get} from './TS_USER_AGENTS'
