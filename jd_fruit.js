@@ -334,9 +334,14 @@ async function doTenWaterAgain() {
         await notify.sendNotify(`${$.name} - 账号${$.index} - ${$.nickName || $.UserName}水果已可领取`, `京东账号${$.index} ${$.nickName || $.UserName}\n${$.farmInfo.farmUserPro.name}已可领取`);
       }
     }
-  } else if (overageEnergy >= 10) {
-    isFruitFinished = true;
+  } else if (overageEnergy >= 10000) {
+    console.log("目前剩余水滴：【" + totalEnergy + "】g，可继续浇水");
+    isFruitFinished = false;
     for (let i = 0; i < parseInt(overageEnergy / 10); i++) {
+      await waterGoodForFarm();
+      console.log(`本次浇水结果:   ${JSON.stringify($.waterResult)}`);
+      if ($.waterResult.code === '0') {
+        console.log(`\n浇水10g成功,剩余${$.waterResult.totalEnergy}\n`)
         if ($.waterResult.finished) {
           // 已证实，waterResult.finished为true，表示水果可以去领取兑换了
           isFruitFinished = true;
