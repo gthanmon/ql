@@ -62,7 +62,6 @@ let groups = []
             console.log(`金币过少或账号异常，退出！`)
         }
     }
-   if (msg) await notify.sendNotify($.name, msg)
     
        
 })()
