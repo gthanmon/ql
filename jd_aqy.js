@@ -15,7 +15,7 @@ const UTC8 = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*6
 
 
 async function changeFiele () {
-    let content = await fs.readFileSync('./iQIYI-bak.js', 'utf8')
+    let content = await fs.readFileSync('./iQIYI.js', 'utf8')
     content = content.replace(/var cookie = ''/, `var cookie = '${KEY}'`)
     await fs.writeFileSync( './iQIYI-bak.js', content, 'utf8')
 }
