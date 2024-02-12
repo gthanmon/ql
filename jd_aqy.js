@@ -5,7 +5,6 @@ http://vip.iqiyi.com/level.html，F12控制台执行console.log(document.cookie)
 */
 const exec = require('child_process').execSync
 const fs = require('fs')
-const download = require('download')
 
 const $ = new Env('爱奇艺会员签到');
 const notify = $.isNode() ? require('../sendNotify') : '';
@@ -14,10 +13,6 @@ const KEY = process.env.iQIYI_COOKIE
 const SEND_KEY = process.env.SEND_KEY
 const UTC8 = new Date().getTime() + new Date().getTimezoneOffset()*60*1000 + 8*60*60*1000;
 
-async function downFile () {
-    const url = 'https://mirror.ghproxy.com/https://raw.githubusercontent.com/BlueSkyClouds/Script/master/nodejs/iQIYI-bak.js'
-    await download(url, './')
-}
 
 async function changeFiele () {
     let content = await fs.readFileSync('./iQIYI-bak.js', 'utf8')
@@ -40,9 +35,6 @@ async function start() {
         console.log('请填写 key 后在继续')
         return
     }
-    // 下载最新代码
-    await downFile();
-    console.log('下载代码完毕')
     // 替换变量
     await changeFiele();
     console.log('替换变量完毕')
@@ -68,10 +60,6 @@ async function start() {
         await notify.sendNotify("爱奇艺签到-" + timeFormat(UTC8), content);
         console.log("爱奇艺签到-" + content)
     }
-
-    //运行完成后，删除下载的文件
-    console.log('运行完成后，删除下载的文件\n')
-    await deleteFile(path);
 }
 
 start()
