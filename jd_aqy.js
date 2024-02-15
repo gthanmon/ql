@@ -60,8 +60,6 @@ async function start() {
         await notify.sendNotify("爱奇艺签到-" + timeFormat(UTC8), content);
         console.log("爱奇艺签到-" + content)
     }
-}
-
     //运行完成后，删除下载的文件
     console.log('运行完成后，删除下载的文件\n')
     await deleteFile(path);
